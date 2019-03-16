@@ -1,0 +1,32 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar .active,
+.navbar a:active,
+.navbar a:hover {
+  color: orange;
+}
