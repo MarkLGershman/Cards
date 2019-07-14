@@ -4,6 +4,7 @@
   "description": "",
   "main": "./backend/index.js",
   "scripts": {
+    "start": "node ./backend/index.js",
     "backend": "concurrently \"cd client && npm run build\" \"cd backend && nodemon index.js\"",
     "client": "cd client && npm i && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
