@@ -1,10 +1,14 @@
-const express = require('express');
+/* NODE */
 const path = require('path');
-const app = express();
-// const io = require("socket.io")(server);
-const bodyparser = require('body-parser');
 
-const port = process.env.PORT || 3000;
+/* EXPRESS */
+const express = require('express');
+const app = express();
+const bodyparser = require('body-parser');
+const port = require('./config').PORT;
+
+/* LOGGING */
+const log = require('./config').log;
 
 app.use(bodyparser.urlencoded({ extended: true }));
 
@@ -19,4 +23,4 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port);
-console.log('App is listening on port ' + port);
+log.info('[Express] App is listening on port ' + port);
