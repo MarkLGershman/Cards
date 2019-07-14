@@ -1,0 +1,6 @@
+{
+  "env": {
+    "verbose": true,
+    "NODE_ENV": "development"
+  }
+}
