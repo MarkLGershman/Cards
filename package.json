@@ -39,7 +39,7 @@
     "express": "^4.17.1",
     "loglevel": "^1.6.3",
     "mongodb": "^3.2.7",
-    "mongoose": "^5.6.4",
+    "mongoose": "^5.7.5",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
